@@ -50,17 +50,26 @@
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
 
 <p>To use this filter you have to:
-1. Add the 'inArray' filter included in filters.js file directly to your filters folder/file
-2. Use angular notation to filter your repeaters:</p>
-
+<ol>
+    <li>Add the 'inArray' filter included in filters.js file directly to your filters folder/file</li>
+    <li>Use angular notation to filter your repeaters:</li>
+</ol>
 <ul>
-<li>Filter by specific elements of the array:
-<code>&lt;span ng-repeat='element in array | inArray:filterArray:"id"'&gt;{{element.id}} &lt;/span&gt;</code>
-where <strong>inArray</strong> is the filter, <strong>filterArray</strong> (the first argument of this filter) is your array to match against, and "id" (second argument) is the element of the list you want to match against the array</li>
-<li>Filter a plain array:
-<code>&lt;span ng-repeat='element in plainArray | inArray:filterArray'&gt;{{element}} &lt;/span&gt;</code>
-where <strong>inArray</strong> is the filter, <strong>filterArray</strong> (the first argument of this filter) is your array to match against your plain array.</li>
-</ul><h3>
+    <li>Filter by specific elements of the array:
+    <pre><code>&lt;span ng-repeat='element in array | inArray:filterArray:"id"'&gt;{{element.id}} &lt;/span&gt;</code></pre>
+    where <strong>inArray</strong> is the filter, <strong>filterArray</strong> (the first argument of this filter) is your array to match against, and "id" (second argument) is the element of the list you want to match against the array</li>
+    <li>Filter a plain array:
+    <pre><code>&lt;span ng-repeat='element in plainArray | inArray:filterArray'&gt;{{element}} &lt;/span&gt;</code></pre>
+    where <strong>inArray</strong> is the filter, <strong>filterArray</strong> (the first argument of this filter) is your array to match against your plain array.</li>
+</ul>
+</p>
+<h3>
+<a name="samples" class="anchor" href="#samples"><span class="octicon octicon-link"></span></a>Samples</h3>
+
+<p>Load this <a href="sample/app/index.html">page</a> to see a live sample using this filters.</p>
+<p>First you'll find a sample filtering by specific elements of array. Second, you'll find a sample filtering plain arrays.</p>
+
+<h3>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>This directive is created by Alejandro Carrasco (<a href="https://github.com/alejandrocarrasco" class="user-mention">@alejandrocarrasco</a>) and is released under the MIT License.</p>
