@@ -11,6 +11,22 @@
                 <span ng-repeat='element in array | inArray:filterArray:"id"'>{{element.id}} </span>
             </p>
         </div>
+        Html code:
+<pre>
+&lt;span ng-repeat='element in plainArray | inArray:filterArray:"id"'>{{element}}&lt;/span>
+</pre>
+Javascript code:
+<pre>
+$scope.array = [
+    {id: 'a'},
+    {id: 'b'},
+    {id: 'c'},
+    {id: 'd'},
+    {id: 'e'}
+];
+
+$scope.filterArray = ['b', 'c', 'd'];
+</pre>
     </div>
 </div>
 <div class="panel panel-primary">
@@ -25,8 +41,19 @@
                 <span ng-repeat='element in plainArray | inArray:filterArray'>{{element}} </span>
             </p>
         </div>
-    </div>
-    <div class="panel-footer">
-        Copyright &copy; 2014 Alejandro Carrasco
+        Html code:
+<pre>
+&lt;span ng-repeat='element in plainArray | inArray:filterArray'>{{element}}&lt;/span>
+</pre>
+        Javascript code:
+<pre>
+$scope.plainArray = ['a', 'b', 'c', 'd', 'e'];
+
+$scope.filterArray = ['b', 'c', 'd'];
+</pre>
     </div>
 </div>
+<hr />
+<footer>
+    <p>Copyright &copy; 2014 Alejandro Carrasco</p>
+</footer>
