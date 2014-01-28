@@ -1,0 +1,32 @@
+<h3>Testing inArrayFilter</h3>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Filter by field "id" of array
+    </div>
+    <div class="panel-body">
+        <p>Array: {{array}}</p>
+        <p>FilterArray: {{filterArray}}</p>
+        <div class="alert alert-success">
+            <p>Results:
+                <span ng-repeat='element in array | inArray:filterArray:"id"'>{{element.id}} </span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Filter elements in array directly
+    </div>
+    <div class="panel-body">
+        <p>Array: {{plainArray}}</p>
+        <p>FilterArray: {{filterArray}}</p>
+        <div class="alert alert-success">
+            <p>Results:
+                <span ng-repeat='element in plainArray | inArray:filterArray'>{{element}} </span>
+            </p>
+        </div>
+    </div>
+    <div class="panel-footer">
+        Copyright &copy; 2014 Alejandro Carrasco
+    </div>
+</div>
