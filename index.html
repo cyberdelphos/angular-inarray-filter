@@ -10,7 +10,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Angular-Inarray-Filter by alejandrocarrasco</title>
+    <title>Angular InArray Filter by alejandrocarrasco</title>
   </head>
 
   <body>
@@ -18,7 +18,7 @@
       <div class="inner">
 
         <header>
-          <h1>Angular-Inarray-Filter</h1>
+          <h1>Angular InArray Filter</h1>
           <h2>Filter results that are contained inside an array</h2>
         </header>
 
@@ -47,26 +47,36 @@
 <p>In this repository you can find a filter for AngularJS to filter results that are contained inside an array.</p>
 
 <h3>
-<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
 
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h3>
 <p>To use this filter you have to:
 <ol>
-    <li>Add the 'inArray' filter included in filters.js file directly to your filters folder/file</li>
+    <li>Download the zip located at this repo's <strong>'/dist'</strong> directory and copy its contents to your project's libraries directory (usually '/lib')</li>
+    <li>Inject the module <strong>'filters-inArrayFilter'</strong> to your Angular App definition (usually in your 'app.js' file)
+        <pre><code>angular.module('MyApp', [ 'MyApp.controllers', ... , 'filters-inArrayFilter' ])</code></pre>
+    </li>
+    <li>Add this script to your html code:
+        <pre><code>&lt;script src="lib/angular-inarray-filter/angular-inarray-filter.js"&gt;</script></code></pre>
+    </li>
+</ol>
+
+<h3><a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
+<ol>
     <li>Use angular notation to filter your repeaters:</li>
 </ol>
 <ul>
     <li>Filter by specific elements of the array:
-    <pre><code>&lt;span ng-repeat='element in array | inArray:filterArray:"id"'&gt;{{element.id}} &lt;/span&gt;</code></pre>
-    where <strong>inArray</strong> is the filter, <strong>filterArray</strong> (the first argument of this filter) is your array to match against, and "id" (second argument) is the element of the list you want to match against the array</li>
+    <pre><code>&lt;span ng-repeat='element in array | inArray:filterArray:"id"'&gt; {{element.id}} &lt;/span&gt;</code></pre>
+    where <strong>inArray</strong> is the filter, <strong>filterArray</strong> (the first argument of this filter) is your array to match against, and <strong>"id"</strong> (second argument) is the element of the list you want to match against the array.</li><br/>
     <li>Filter a plain array:
-    <pre><code>&lt;span ng-repeat='element in plainArray | inArray:filterArray'&gt;{{element}} &lt;/span&gt;</code></pre>
+    <pre><code>&lt;span ng-repeat='element in plainArray | inArray:filterArray'&gt; {{element}} &lt;/span&gt;</code></pre>
     where <strong>inArray</strong> is the filter, <strong>filterArray</strong> (the first argument of this filter) is your array to match against your plain array.</li>
 </ul>
 </p>
 <h3>
 <a name="samples" class="anchor" href="#samples"><span class="octicon octicon-link"></span></a>Samples</h3>
 
-<p>Load this <a href="sample/app/index.html">page</a> to see a live sample using this filters.</p>
+<p>Take a look at this <a href="sample/app/index.html">page</a> to see a live sample using these filters.</p>
 <p>First you'll find a sample filtering by specific elements of array. Second, you'll find a sample filtering plain arrays.</p>
 
 <h3>
