@@ -1,4 +1,4 @@
-angular-inarray-filter
+Angular InArray Filter
 ======================
 
 Filter results that are contained inside an array
