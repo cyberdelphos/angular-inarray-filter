@@ -1,14 +1,14 @@
-'use strict';
-
-/* Filters */
-var appFilters = angular.module('InArray.filters', []);
-
 /**
  * Filtra los resultados contenidos en un array
  * @Author: Alejandro Carrasco W.
  *
  */
-appFilters.filter('inArray', function($filter){
+
+angular.module('filters-inArrayFilter', ['InArrayFilter']);
+
+var inArrayFilter = angular.module('InArrayFilter', []);
+
+inArrayFilter.filter('inArray', function($filter){
     return function(list, arrayFilter,element){
         if(arrayFilter){
             if (element){
