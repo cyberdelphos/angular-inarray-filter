@@ -19,6 +19,6 @@ Installation
 License
 -------
 
-Copyright 2014 Alejandro Carrasco.
+Copyright 2014 A. Carrasco.
 
 Released under MIT License.
