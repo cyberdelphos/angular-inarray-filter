@@ -13,12 +13,12 @@ Installation
 Usage
 -----
 
-Use the inArrayFilter as described [here](http://alejandrocarrasco.github.io/angular-inarray-filter/#usage "angular-inarray-filter by Alejandro Carrasco")
+Use the inArrayFilter as described [here](http://cyberdelphos.github.io/angular-inarray-filter/#usage "angular-inarray-filter by A. Carrasco")
 
 Documentation
 -------------
 
-Check the documentation of this repository at it's [GitHub Page](http://alejandrocarrasco.github.io/angular-inarray-filter/ "angular-inarray-filter by Alejandro Carrasco")
+Check the documentation of this repository at it's [GitHub Page](http://cyberdelphos.github.io/angular-inarray-filter/ "angular-inarray-filter by Alejandro Carrasco")
 
 License
 -------
