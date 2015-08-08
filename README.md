@@ -18,11 +18,11 @@ Use the inArrayFilter as described [here](http://cyberdelphos.github.io/angular-
 Documentation
 -------------
 
-Check the documentation of this repository at it's [GitHub Page](http://cyberdelphos.github.io/angular-inarray-filter/ "angular-inarray-filter by Alejandro Carrasco")
+Check the documentation of this repository at it's [GitHub Page](http://cyberdelphos.github.io/angular-inarray-filter/ "angular-inarray-filter by A. Carrasco")
 
 License
 -------
 
-Copyright 2014 Alejandro Carrasco.
+Copyright 2014 A. Carrasco.
 
 Released under MIT License.
